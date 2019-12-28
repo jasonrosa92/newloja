@@ -23,7 +23,7 @@ class TransportadoraForm(forms.ModelForm):
             'informacoes_adicionais': forms.Textarea(attrs={'class': 'form-control'}),
         }
         labels = {
-            'nome_razao_social': _('Razão Social'),
+            'nome_razao_social': _('Nome / Razão Social'),
             'tipo_pessoa': _(''),
             'informacoes_adicionais': _('Informações Adicionais'),
         }

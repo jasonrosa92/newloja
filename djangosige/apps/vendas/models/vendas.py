@@ -441,9 +441,9 @@ class PedidoVenda(Venda):
         max_length=1, choices=STATUS_PEDIDO_VENDA_ESCOLHAS, default='0')
 
     class Meta:
-        verbose_name = "Pedido de Venda"
+        verbose_name = "Pedido"
         permissions = (
-            ("faturar_pedidovenda", "Pode faturar Pedidos de Venda"),
+            ("faturar_pedidovenda", "Pode faturar Pedidos"),
         )
 
     @property
@@ -458,11 +458,11 @@ class PedidoVenda(Venda):
         return reverse_lazy('vendas:editarpedidovendaview', kwargs={'pk': self.id})
 
     def __unicode__(self):
-        s = u'Pedido de venda nº %s (%s)' % (
+        s = u'Pedido nº %s (%s)' % (
             self.id, self.get_status_display())
         return s
 
     def __str__(self):
-        s = u'Pedido de venda nº %s (%s)' % (
+        s = u'Pedido nº %s (%s)' % (
             self.id, self.get_status_display())
         return s

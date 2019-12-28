@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    {% load staticfiles %}
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <link rel="icon" type="image/x-icon" href="{% static '#' %}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
     <script src="{% static 'js/jquery/jquery-3.0.0.min.js' %}"></script>
 
 
-    <title>DjangoSIGE | {%block title%}Bem-vindo{%endblock%}</title>
+    <title>Eagle S.S | {%block title%}Bem-vindo{%endblock%}</title>
 </head>
 
 <body class="{%block body_class%}theme{%endblock%}">
@@ -55,7 +55,7 @@
                 <a href="javascript:void(0);" class="bars"></a>
                 <div class="navbar-brand">
                 	<!-- Main icone, data e horario -->
-                    <span><a href="{% url 'base:index' %}">Django<b style="color:#e76d64;">SIGE</b></a></span>
+                    <span><a href="{% url 'base:index' %}">Eagle<b style="color:#e76d64; padding-left: 5px">S.S</b></a></span>
                     <!--<span style="padding-left:30px;">Bem-vindo(a), <strong class="username-strong"></strong></span>-->
                     <span style="padding-left:25px;"><i class="material-icons">&#xE8DF;</i></span>
                     <span>{%now "l, j/m/Y"%}</span>
@@ -70,7 +70,6 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="https://github.com/thiagopena/djangoSIGE" title="Ajuda" ><i class="material-icons">&#xE8FD;</i></a></li>
                     <li><a id="logout-btn" href="{% url 'login:logoutview' %}" title="Sair" ><i class="material-icons">&#xE879;</i></a></li>
                     
                 </ul>
@@ -201,7 +200,7 @@
 
                             <li>
                                 <a href="{% url 'vendas:listapedidovendaview' %}">
-                                    Pedidos de venda
+                                    Pedidos 
                                 </a>
                             </li>
 
@@ -428,10 +427,10 @@
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2017 <a href=""> DjangoSIGE</a>.
+                    &copy; 2019 <a href=""> Eagle S.S</a>.
                 </div>
                 <div class="version">
-                    <b>Versão: </b> {{versao}}
+                    <b>Versão: </b> 2.3
                 </div>
             </div>
             <!-- #Footer -->

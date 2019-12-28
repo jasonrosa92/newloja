@@ -110,7 +110,7 @@ class AdicionarPedidoVendaView(AdicionarVendaView):
     form_class = PedidoVendaForm
     template_name = "vendas/pedido_venda/pedido_venda_add.html"
     success_url = reverse_lazy('vendas:listapedidovendaview')
-    success_message = "<b>Pedido de venda %(id)s </b>adicionado com sucesso."
+    success_message = "<b>Pedido %(id)s </b>adicionado com sucesso."
     permission_codename = 'add_pedidovenda'
 
     def view_context(self, context):
