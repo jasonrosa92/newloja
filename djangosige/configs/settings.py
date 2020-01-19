@@ -1,3 +1,4 @@
+import django_heroku
 import os
 from decouple import config, Csv
 from dj_database_url import parse as dburl
@@ -5,6 +6,8 @@ from .configs import DEFAULT_DATABASE_URL, DEFAULT_FROM_EMAIL, EMAIL_HOST, EMAIL
 
 APP_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 PROJECT_ROOT = os.path.abspath(os.path.dirname(APP_ROOT))
+
+django_heroku.settings(locals())
 
 
 # Quick-start development settings - unsuitable for production
