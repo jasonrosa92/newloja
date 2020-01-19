@@ -1,1 +1,1 @@
-web: gunicorn hello:djangosige.wsgi --log-file -
+web: gunicorn djangosige.wsgi --log-file -
