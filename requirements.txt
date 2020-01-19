@@ -10,7 +10,6 @@ dj-database-url==0.5.0
 Django==3.0
 eight==0.4.2
 future==0.16.0
-Geraldo==0.4.16
 gunicorn==20.0.4
 lxml==4.2.6
 Pillow==6.2.1
