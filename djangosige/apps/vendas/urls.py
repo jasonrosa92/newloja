@@ -76,4 +76,4 @@ urlpatterns = [
     # Cancelar Pedido de venda
     url(r'cancelarpedidovenda/(?P<pk>[0-9]+)/$',
         views.CancelarPedidoVendaView.as_view(), name='cancelarpedidovenda'),
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
