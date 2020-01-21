@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^compras/', include('djangosige.apps.compras.urls')),
     url(r'^financeiro/', include('djangosige.apps.financeiro.urls')),
     url(r'^estoque/', include('djangosige.apps.estoque.urls')),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]+ static (settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if DEBUG is True:
     urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
