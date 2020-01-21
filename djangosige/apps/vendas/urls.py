@@ -2,6 +2,7 @@
 
 from django.conf.urls import url
 from django.conf.urls.static import static
+from .configs.settings import DEBUG, MEDIA_ROOT, MEDIA_URL
 from . import views
 
 
