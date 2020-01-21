@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from django.conf.urls import url
-from django.conf.urls.static import static
-from .configs.settings import DEBUG, MEDIA_ROOT, MEDIA_URL
 from . import views
 
 
@@ -79,4 +77,4 @@ urlpatterns = [
     # Cancelar Pedido de venda
     url(r'cancelarpedidovenda/(?P<pk>[0-9]+)/$',
         views.CancelarPedidoVendaView.as_view(), name='cancelarpedidovenda'),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
